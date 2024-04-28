@@ -430,13 +430,15 @@ public class SpaceGame extends JFrame implements KeyListener {
                 @Override
                 public void run() {
                     try {
-                        Thread.sleep(500); // Limit firing rate
+                        // Limit firing rate
+                        Thread.sleep(500); 
                         isFiring = false;
                     } catch (InterruptedException ex) {
                         ex.printStackTrace();
                     }
                 }
             }).start();
+        // This will check if the S key is pressed and  if the shield isn't already activated
         } else if (keyCode == KeyEvent.VK_S && shieldDuration == 0){
             isShieldActive = true;
             shieldDuration = 100;
