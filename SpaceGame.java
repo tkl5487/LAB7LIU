@@ -98,6 +98,7 @@ public class SpaceGame extends JFrame implements KeyListener {
         setSize(WIDTH, HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
+        
         // Loads the images for the player, obstacle, and power ups
          try{
              playerImage = ImageIO.read(new File("BMO-1.png_1.png"));
