@@ -24,7 +24,6 @@ import java.util.TimerTask;
 import java.applet.*;
 import java.net.URL;
 
-
 // Define the Spacegame Class
 public class SpaceGame extends JFrame implements KeyListener {
     // Game dimension, size, speed, and other parameters
@@ -43,7 +42,6 @@ public class SpaceGame extends JFrame implements KeyListener {
     private static final int INVULNERABILITY_DURATION = 2000;
     private static final int POWER_UP_WIDTH = 100;
     private static final int POWER_UP_HEIGHT = 100;
-
     private static final int CHALLENGE_SCORE = 100;
 
     // Tracks the game score, lives, who fast objects will move, and state of game
@@ -59,12 +57,7 @@ public class SpaceGame extends JFrame implements KeyListener {
     private boolean isChallengeActive = false;
     private List<Point> powerUps = new ArrayList<>();
     private BufferedImage powerUpImage;
-
-
-
-
-
-
+    
     // Label shows the game
     private JPanel gamePanel;
 
@@ -367,7 +360,6 @@ public class SpaceGame extends JFrame implements KeyListener {
                     break;
                 }
             }
-
 
             // Check collision with obstacle
             Rectangle projectileRect = new Rectangle(projectileX, projectileY, PROJECTILE_WIDTH, PROJECTILE_HEIGHT);
